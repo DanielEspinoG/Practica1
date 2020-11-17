@@ -1,0 +1,13 @@
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.exe
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.deps.json
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.json
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.dev.json
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.csprojAssemblyReference.cache
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfoInputs.cache
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfo.cs
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.csproj.CoreCompileInputs.cache
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.genruntimeconfig.cache
