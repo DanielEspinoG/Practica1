@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\espino12058\\Desktop\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj": {}
+    "D:\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\espino12058\\Desktop\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj": {
+    "D:\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\espino12058\\Desktop\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj",
+        "projectUniqueName": "D:\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj",
         "projectName": "Práctica1",
-        "projectPath": "C:\\Users\\espino12058\\Desktop\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj",
-        "packagesPath": "C:\\Users\\espino12058\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\espino12058\\Desktop\\Repos\\Practica1\\Práctica1\\Práctica1\\obj\\",
+        "projectPath": "D:\\Repos\\Practica1\\Práctica1\\Práctica1\\Práctica1.csproj",
+        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\Practica1\\Práctica1\\Práctica1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\espino12058\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

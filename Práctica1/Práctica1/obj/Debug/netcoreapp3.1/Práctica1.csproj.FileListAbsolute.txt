@@ -11,3 +11,16 @@ C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\net
 C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.dll
 C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.pdb
 C:\Users\espino12058\Desktop\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.genruntimeconfig.cache
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.csprojAssemblyReference.cache
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfoInputs.cache
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfo.cs
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.csproj.CoreCompileInputs.cache
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.exe
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.deps.json
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.json
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.dev.json
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.dll
+D:\Repos\Practica1\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.pdb
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.dll
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.pdb
+D:\Repos\Practica1\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.genruntimeconfig.cache
