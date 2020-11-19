@@ -60,16 +60,16 @@ namespace Práctica1
         {
             Console.BackgroundColor = ConsoleColor.Green;
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("--------------------------------------");
+            Console.WriteLine("---------------------------------------");
             Console.Write("-");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("                SUMA                ");
+            Console.Write("              SUMATORIO              ");
             Console.ResetColor();
             Console.BackgroundColor = ConsoleColor.Green;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("-");
-            Console.WriteLine("--------------------------------------");
+            Console.WriteLine("---------------------------------------");
             Console.ResetColor();
         }
 
@@ -185,7 +185,7 @@ namespace Práctica1
                         break;
                     case 2:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchAddMenu();
+                        UserInterfaceUtils.LaunchSumatoriMenu();
                         break;
                 }
             }

@@ -6,59 +6,53 @@ namespace Práctica1
 {
     class UserInterfaceUtils
     {
-        /*
         public static void LaunchFibonacciMenu()
         {
-            while (true)
-            {
-                UserInterface.PrintFibonacciHead();
-                int number = ReadInteger("¿Hasta que valor quieres ver? ");
-                int result = Operations.GetFibonacci(number);
-                Console.WriteLine("0 1" + result);
-                Console.WriteLine("");
-                UserInterface.PrinFibonacciSubMenu();
-            }
+            UserInterface.PrintFibonacciHead();
+            Operations.GetFibonacci();
+            Console.WriteLine("");
+            Console.WriteLine("Pulsa intro para volver al Menú Principal");
+            Console.ReadLine();
+            Program.LunchMainMenu();
         }
-        */
 
         public static void LaunchPrimeMenu ()
         {
-            while (true)
-            {
-                UserInterface.PrintPrimeHead();
-                int number = ReadInteger("Introduce un valor: ");
-                bool result = Operations.IsPrime(number);
-                Console.WriteLine("Resultado: " + result);
-                Console.WriteLine("");
-                UserInterface.PrinPrimeSubMenu();
-            }
+            UserInterface.PrintPrimeHead();
+            int number = ReadInteger("Introduce un valor: ");
+            bool result = Operations.IsPrime(number);
+            if (result == true)
+                Console.WriteLine("El " + number + " SI es Primo");
+            else
+                Console.WriteLine("El " + number + " NO es Primo");
+            Console.WriteLine("");
+            Console.WriteLine("Pulsa intro para volver al Menú Principal");
+            Console.ReadLine();
+            Program.LunchMainMenu();
         }
 
         public static void LaunchFactirialMenu()
         {
-            while (true)
-            {
-                UserInterface.PrintFactorialHead();
-                int number = ReadInteger("Introduce un valor: ");
-                int result = Operations.GetFactorial(number);
-                Console.WriteLine("Resultado: " + result);
-                Console.WriteLine("");
-                UserInterface.PrinFactorialSubMenu();
-            }
+            UserInterface.PrintFactorialHead();
+            int number = ReadInteger("Introduce un valor: ");
+            int result = Operations.GetFactorial(number);
+            Console.WriteLine("Resultado: " + result);
+            Console.WriteLine("");
+            Console.WriteLine("Pulsa intro para volver al Menú Principal");
+            Console.ReadLine();
+            Program.LunchMainMenu();
         }
 
-        public static void LaunchAddMenu()
+        public static void LaunchSumatoriMenu()
         {
-            while (true)
-            {
                 UserInterface.PrintAddHead();
-                double number1 = ReadInteger("Introduce un valor: ");
-                double number2 = ReadInteger("Introduce otro valor: ");
-                double result = Operations.GetAdd(number1, number2);
-                Console.WriteLine("Resultado de " + number1 + " + " + number2 + " = " + result);
-                Console.WriteLine("");
-                UserInterface.PrintAddSubMenu();
-            }
+            int number1 = ReadInteger("Introduce un valor: ");
+            int result = Operations.GetSumatori(number1);
+            Console.WriteLine("Resultado de " + result);
+            Console.WriteLine("");
+            Console.WriteLine("Pulsa intro para volver al Menú Principal");
+            Console.ReadLine();
+            Program.LunchMainMenu();
         }
 
         /// <summary>
@@ -66,15 +60,14 @@ namespace Práctica1
         /// </summary>
         public static void LaunchPower2Menu()
         {
-            while (true)
-            {
-                UserInterface.PrintPower2Head();
-                double number1 = ReadInteger("Introduce la potencia de 2:");
-                double result = Operations.Power2(number1, 2);
-                Console.WriteLine("Resultado:" + result);
-                Console.WriteLine("");
-                UserInterface.PrinSubMenu();
-            }
+            UserInterface.PrintPower2Head();
+            double number1 = ReadInteger("Introduce la potencia de 2:");
+            double result = Operations.Power2(number1, 2);
+            Console.WriteLine("Resultado:" + result);
+            Console.WriteLine("");
+            Console.WriteLine("Pulsa intro para volver al Menú Principal");
+            Console.ReadLine();
+            Program.LunchMainMenu();
         }
 
         /// <summary>

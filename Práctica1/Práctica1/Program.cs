@@ -6,6 +6,7 @@ namespace Práctica1
     {
         public static void LunchMainMenu()
         {
+            Console.Clear();
             UserInterface.PrintMainMenu();
 
             while (true)
@@ -23,7 +24,7 @@ namespace Práctica1
                         break;
                     case 2:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchAddMenu();
+                        UserInterfaceUtils.LaunchSumatoriMenu();
                         break;
                     case 3:
                         Console.Clear();
@@ -33,12 +34,10 @@ namespace Práctica1
                         Console.Clear();
                         UserInterfaceUtils.LaunchPrimeMenu();
                         break;
-                        /*
                     case 5:
                         Console.Clear();
                         UserInterfaceUtils.LaunchFibonacciMenu();
                         break;
-                        */
                     default:
                         Console.WriteLine("No se ha seleccionado ninguna opción");
                         Console.WriteLine("Inserte un número entre el 0 y el 5");
