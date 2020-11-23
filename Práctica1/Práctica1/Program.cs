@@ -4,14 +4,19 @@ namespace Práctica1
 {
     class Program
     {
+        /// <summary>
+        /// Imprime el Menú con el título que le damos (MENÚ PRINCIPAL) y un Submenú, consola espera a que el usuario elija una de las opciones 
+        /// que aparecen para mostrar ese Menú y en caso de introducir un dato fuera de ese Submenú imprime un aviso al usuario de error.
+        /// </summary>
         public static void LunchMainMenu()
         {
             Console.Clear();
-            UserInterface.PrintMainMenu();
+            UserInterfaceMenu.PrintHead("           MENÚ PRINCIPAL           ", ConsoleColor.DarkCyan);
+            UserInterfaceMenu.PrintSubMainMenu();
 
             while (true)
             {
-                int option = UserInterfaceUtils.ReadOption();
+                int option = Controllers.ReadOption();
 
                 switch (option)
                 {
@@ -20,23 +25,23 @@ namespace Práctica1
                         break;
                     case 1:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchPower2Menu();
+                        Controllers.LaunchPower2Menu();
                         break;
                     case 2:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchSumatoriMenu();
+                        Controllers.LaunchSumatoriMenu();
                         break;
                     case 3:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchFactirialMenu();
+                        Controllers.LaunchFactirialMenu();
                         break;
                     case 4:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchPrimeMenu();
+                        Controllers.LaunchPrimeMenu();
                         break;
                     case 5:
                         Console.Clear();
-                        UserInterfaceUtils.LaunchFibonacciMenu();
+                        Controllers.LaunchFibonacciMenu();
                         break;
                     default:
                         Console.WriteLine("No se ha seleccionado ninguna opción");
