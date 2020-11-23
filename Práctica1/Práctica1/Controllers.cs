@@ -70,20 +70,22 @@ namespace Práctica1
             UserInterfaceMenu.PrintHead("             SUMATORIO              ", ConsoleColor.Blue);
             Console.WriteLine("Muestra el resultado de la suma desde el número 1 hasta el propio valor introducido.");
             Console.WriteLine("");
-            int number1 = ReadInteger("Introduce un valor: ");
 
-            if (0 < number1)
+            while (true)
             {
-                int result = Utils.GetSumatori(number1);
-                Console.WriteLine("Resultado de " + result);
-            }
-            else
-            {
-                Console.WriteLine("Valor incorrecto");
-                Console.WriteLine("");
-                number1 = ReadInteger("Introduce un valor válido: ");
-                int result = Utils.GetSumatori(number1);
-                Console.WriteLine("Resultado de " + result);
+                int number1 = ReadInteger("Introduce un valor: ");
+
+                if (0 < number1)
+                {
+                    int result = Utils.GetSumatori(number1);
+                    Console.WriteLine("Resultado de " + result);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Error. El valor tiene que ser mayor que 1");
+                    Console.WriteLine("");
+                }
             }
 
             Console.WriteLine("");

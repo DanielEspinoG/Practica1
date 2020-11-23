@@ -28,6 +28,10 @@ namespace Práctica1
         /// <param name="color">Es el color que le damos tanto al borde como al las letras de la cabecera</param>
         public static void PrintHead(string Title, ConsoleColor color)
         {
+            /*
+            int countcaracter = Title.Length;
+
+            */
             Console.BackgroundColor = color;
             Console.WriteLine("--------------------------------------");
             Console.Write("-");
