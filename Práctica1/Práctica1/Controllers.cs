@@ -12,7 +12,7 @@ namespace Práctica1
         /// </summary>
         public static void LaunchFibonacciMenu()
         {
-            UserInterfaceMenu.PrintHead("         SERIE DE FIBONACCI         ", ConsoleColor.Magenta);
+            UserInterfaceMenu.PrintHead("SERIE DE FIBONACCI", ConsoleColor.Magenta);
             Console.WriteLine("Muestra los 90 primeros digitos de la Serie de Fibonacci.");
             Console.WriteLine("");
             Utils.GetFibonacci(90);
@@ -28,15 +28,29 @@ namespace Práctica1
         /// </summary>
         public static void LaunchPrimeMenu ()
         {
-            UserInterfaceMenu.PrintHead("        ¿ES UN NÚMERO PRIMO?        ", ConsoleColor.Cyan);
+            UserInterfaceMenu.PrintHead("¿ES UN NÚMERO PRIMO?", ConsoleColor.Cyan);
             Console.WriteLine("Muestra si el valor introducido es Primo o no.");
             Console.WriteLine("");
-            int number = ReadInteger("Introduce un valor: ");
-            bool result = Utils.IsPrime(number);
-            if (result == true)
-                Console.WriteLine("El " + number + " SI es Primo");
-            else
-                Console.WriteLine("El " + number + " NO es Primo");
+            while (true)
+            {
+                int number = ReadInteger("Introduce un valor: ");
+
+                if (0 < number)
+                {
+                    bool result = Utils.IsPrime(number);
+
+                    if (result == true)
+                        Console.WriteLine("El " + number + " SI es Primo");
+                    else
+                        Console.WriteLine("El " + number + " NO es Primo");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Error. El valor tiene que ser mayor que 0");
+                    Console.WriteLine("");
+                }
+            }
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
@@ -49,12 +63,26 @@ namespace Práctica1
         /// </summary>
         public static void LaunchFactirialMenu()
         {
-            UserInterfaceMenu.PrintHead("       FACTORIAL DE UN NÚMERO       ", ConsoleColor.Yellow);
-            Console.WriteLine("Muestra el resultado de la multiplicación de todos los números enteros positivos que hay entre el valor dado y el 1.");
+            UserInterfaceMenu.PrintHead("FACTORIAL DE UN NÚMERO", ConsoleColor.Yellow);
+            Console.WriteLine("Muestra el resultado de la multiplicación de todos los números enteros positivos que hay entre el 1 y el valor dado.");
             Console.WriteLine("");
-            int number = ReadInteger("Introduce un valor: ");
-            int result = Utils.GetFactorial(number);
-            Console.WriteLine("Resultado: " + result);
+
+            while (true)
+            {
+                int number = ReadInteger("Introduce un valor: ");
+
+                if (0 < number)
+                {
+                    int result = Utils.GetFactorial(number);
+                    Console.WriteLine("Resultado de " + result);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Error. El valor tiene que ser mayor que 0");
+                    Console.WriteLine("");
+                }
+            }
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
@@ -67,27 +95,26 @@ namespace Práctica1
         /// </summary>
         public static void LaunchSumatoriMenu()
         {
-            UserInterfaceMenu.PrintHead("             SUMATORIO              ", ConsoleColor.Blue);
+            UserInterfaceMenu.PrintHead("SUMATORIO", ConsoleColor.Blue);
             Console.WriteLine("Muestra el resultado de la suma desde el número 1 hasta el propio valor introducido.");
             Console.WriteLine("");
-
-            while (true)
+            Boolean bucle = true;
+            while (bucle)
             {
-                int number1 = ReadInteger("Introduce un valor: ");
+                int number = ReadInteger("Introduce un valor: ");
 
-                if (0 < number1)
+                if (0 < number)
                 {
-                    int result = Utils.GetSumatori(number1);
+                    int result = Utils.GetSumatori(number);
                     Console.WriteLine("Resultado de " + result);
-                    break;
+                    bucle = false;
                 }
                 else
                 {
-                    Console.WriteLine("Error. El valor tiene que ser mayor que 1");
+                    Console.WriteLine("Error. El valor tiene que ser mayor que 0");
                     Console.WriteLine("");
                 }
             }
-
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
@@ -100,11 +127,11 @@ namespace Práctica1
         /// </summary>
         public static void LaunchPower2Menu()
         {
-            UserInterfaceMenu.PrintHead("         POTENCIA EN BASE 2         ", ConsoleColor.Red);
+            UserInterfaceMenu.PrintHead("POTENCIA EN BASE 2", ConsoleColor.Red);
             Console.WriteLine("Muestra el resultado de multiplicar la base 2 por si mismo varias veces (exponente).");
             Console.WriteLine("");
-            int number1 = ReadInteger("Introduce el exponente: ");
-            double result = Utils.GetPower2(number1, 2);
+            int Exponent = ReadInteger("Introduce el exponente: ");
+            double result = Utils.GetPower(Exponent, 2);
             Console.WriteLine("Resultado:" + result);
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
@@ -133,7 +160,8 @@ namespace Práctica1
                 }
                 catch (System.Exception e)
                 {
-                    Console.WriteLine ("Número incorrecto");
+                    Console.WriteLine("Error. Introduzca un número");
+                    Console.WriteLine("");
                 }
             }
         }

@@ -11,7 +11,7 @@ namespace Práctica1
         public static void LunchMainMenu()
         {
             Console.Clear();
-            UserInterfaceMenu.PrintHead("           MENÚ PRINCIPAL           ", ConsoleColor.DarkCyan);
+            UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
             UserInterfaceMenu.PrintSubMainMenu();
 
             while (true)
