@@ -98,8 +98,8 @@ namespace Práctica1
             UserInterfaceMenu.PrintHead("SUMATORIO", ConsoleColor.Blue);
             Console.WriteLine("Muestra el resultado de la suma desde el número 1 hasta el propio valor introducido.");
             Console.WriteLine("");
-            Boolean bucle = true;
-            while (bucle)
+
+            while (true)
             {
                 int number = ReadInteger("Introduce un valor: ");
 
@@ -107,7 +107,7 @@ namespace Práctica1
                 {
                     int result = Utils.GetSumatori(number);
                     Console.WriteLine("Resultado de " + result);
-                    bucle = false;
+                    break;
                 }
                 else
                 {
