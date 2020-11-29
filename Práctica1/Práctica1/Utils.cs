@@ -37,7 +37,7 @@ namespace Práctica1
         }
         
         /// <summary>
-        /// Calcula si el valor dado (n) es primo o no.
+        /// Calcula si el número es primo o no.
         /// </summary>
         /// <param name="number">Es el valor del cual queremos saber si es primo</param>
         /// <returns>Devuelve un False o un True.</returns>
@@ -63,7 +63,7 @@ namespace Práctica1
         }
 
         /// <summary>
-        /// Calcula el Sumatorio de un número, el cual, al darle el valor "n" suma desde el valor 1 hasta "n".
+        /// Calcula el Sumatorio de un número, el cual, suma desde el valor 1 hasta el número aportado.
         /// </summary>
         /// <param name="number">Es el valor hasta el cual va a sumar</param>
         /// <returns>Devuelve el resultado total de las sumas realizadas</returns>
@@ -83,12 +83,12 @@ namespace Práctica1
         }
 
         /// <summary>
-        /// Calcula la potencia de un número, el cual, al darle los valores "n" (base) y "a" (exponente) multiplica el valor n tantas veces como sea "a",
+        /// Calcula la potencia de un número, el cual, al darle los valores base y exponente, multiplica el valor base tantas veces como sea exponente,
         /// sea su potencia positiva o negativa.
         /// </summary>
-        /// <param name="Exponent">Es la base</param>
-        /// <param name="Base">Es el exponente, tantas veces como se repite el bucle</param>
-        /// <returns>Devuelve el resultado del número "a" elevado a "n" o "-n"</returns>
+        /// <param name="Exponent">Es el exponente</param>
+        /// <param name="Base">Es la base</param>
+        /// <returns>Devuelve el resultado de la base elevada al exponente2</returns>
         public static double GetPower (double Exponent, double Base)
         {
             if (0 <= Exponent)

@@ -7,8 +7,7 @@ namespace Práctica1
     class Controllers
     {
         /// <summary>
-        /// Imprime el Menú con el título que le damos (SERIE DE FIBONACCI), imprime el resultado de la operación que realiza
-        /// la función que llamamos (GetFibonacci) y espera a que el Usuario pulse una tecla para volver al Menú principal.
+        /// Imprime el Menú Serie Fibonacci que imprime los 90 primeros números de la serie.
         /// </summary>
         public static void LaunchFibonacciMenu()
         {
@@ -19,12 +18,11 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
-            Program.LunchMainMenu();
         }
 
         /// <summary>
-        /// Imprime el Menú con el título que le damos (¿ES UN NÚMERO PRIMO?), consola espera a que el usuario introduzca un dato, imprime el resultado de la 
-        /// operación que realiza la función que llamamos (GetPrime) con el dato introducido y espera a que el Usuario pulse una tecla para volver al Menú principal.
+        /// Imprime el Menú Número Primo. En el cual imprime si el número introducido, por el usuario, es primo o no.
+        /// Si el número introducido no es mayor de 0 muestra un mensaje de error.
         /// </summary>
         public static void LaunchPrimeMenu ()
         {
@@ -40,7 +38,7 @@ namespace Práctica1
                     bool result = Utils.IsPrime(number);
 
                     if (result == true)
-                        Console.WriteLine("El " + number + " SI es Primo");
+                        Console.WriteLine("El" + number + "SI es Primo");
                     else
                         Console.WriteLine("El " + number + " NO es Primo");
                     break;
@@ -54,12 +52,11 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
-            Program.LunchMainMenu();
         }
 
         /// <summary>
-        /// Imprime el Menú con el título que le damos (FACTORIAL DE UN NÚMERO), consola espera a que el usuario introduzca un dato, imprime el resultado de la 
-        /// operación que realiza la función que llamamos (GetFactorial) con el dato introducido y espera a que el Usuario pulse una tecla para volver al Menú principal.
+        /// Imprime el Menú Factorial de un número. En el cual imprime el factorial del número introducido por el usuario.
+        /// Si el número introducido no es mayor de 0 muestra un mensaje de error.
         /// </summary>
         public static void LaunchFactirialMenu()
         {
@@ -86,12 +83,11 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
-            Program.LunchMainMenu();
         }
 
         /// <summary>
-        /// Imprime el Menú con el título que le damos (SUMATORIO), consola espera a que el usuario introduzca un dato, imprime el resultado de la 
-        /// operación que realiza la función que llamamos (GetSumatorio) con el dato introducido y espera a que el Usuario pulse una tecla para volver al Menú principal.
+        /// Imprime el Menú Sumatorio. En el cual imprime el sumatorio del número introducido por el usuario.
+        /// Si el número introducido no es mayor de 0 muestra un mensaje de error.
         /// </summary>
         public static void LaunchSumatoriMenu()
         {
@@ -118,12 +114,10 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
-            Program.LunchMainMenu();
         }
 
         /// <summary>
-        /// Imprime el Menú con el título que le damos (POTENCIA EN BASE 2), consola espera a que el usuario introduzca un dato, imprime el resultado de la 
-        /// operación que realiza la función que llamamos (GetPowe2) con el dato introducido y espera a que el Usuario pulse una tecla para volver al Menú principal.
+        /// Imprime el Menú Potencia de 2. En el cual imprime el resultado de 2 elevado al número introducido por el usuario.
         /// </summary>
         public static void LaunchPower2Menu()
         {
@@ -132,21 +126,17 @@ namespace Práctica1
             Console.WriteLine("");
             int Exponent = ReadInteger("Introduce el exponente: ");
             double result = Utils.GetPower(Exponent, 2);
-            Console.WriteLine("Resultado:" + result);
+            Console.WriteLine(String.Format("Resultado: " + result));
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
-            Program.LunchMainMenu();
         }
 
         /// <summary>
-        /// Consola espera a que el usuario introduzca un dato el cual es un string y lo convierte a int para que se puedan realizar
-        /// las operaciones que correspondan y en el caso de no ser un dato valido, le imprime un mensaje avisando al usuario.
+        /// Lee el string introducido por el usuario y lo convierte a int. En el caso de no poder convertirlo muestra un mensaje de error.
         /// </summary>
-        /// <param name="message"> Es el dato introducido por el usuario</param>
-        /// <returns> Devuelve el dato introducido por el usuario si es correcto y si es erroneo un mensaje
-        /// avisando al usuario de que ese dato no es valido
-        /// </returns>
+        /// <param name="message">Valor introducido por el usuario</param>
+        /// <returns>Valor introducido por el usuario siempre que sea int</returns>
         public static int ReadInteger(string message)
         {
             while (true)
@@ -167,11 +157,10 @@ namespace Práctica1
         }
 
         /// <summary>
-        /// Consola espera a que el Usuario introduzca un valor en string y transforma a int para que un switch
-        /// sepa que opción del submenú eligió el usuario.
+        /// Lee el string introducido por el usuario y lo convierte a int, para elegir una de las opciones del submenú.
         /// </summary>
         /// <returns>
-        /// Devuelve el dato introducido por el usuario y lo transforma de string a int.
+        /// Valor introducido por el usuario o un -1.
         /// </returns>
         public static int ReadOption()
         {

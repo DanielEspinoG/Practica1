@@ -7,7 +7,7 @@ namespace Práctica1
     class UserInterfaceMenu
     {
         /// <summary>
-        /// Imprime las opciones del Menú principal.
+        /// Imprime el submenu del menú principal.
         /// </summary>
         public static void PrintSubMainMenu()
         {
@@ -22,10 +22,10 @@ namespace Práctica1
         }
 
         /// <summary>
-        /// Imprime la cabecera estandar de cualquier menú.
+        /// Imprime la cabecera de un menú.
         /// </summary>
-        /// <param name="Title">El el título que le damos a la cabecera del menú</param>
-        /// <param name="color">Es el color que le damos tanto al borde como al las letras de la cabecera</param>
+        /// <param name="Title">Titulo del menú.</param>
+        /// <param name="color">Color de la cabecera.</param>
         public static void PrintHead(string Title, ConsoleColor color)
         {
             int countcaracter = Title.Length;

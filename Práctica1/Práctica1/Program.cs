@@ -5,23 +5,24 @@ namespace Práctica1
     class Program
     {
         /// <summary>
-        /// Imprime el Menú con el título que le damos (MENÚ PRINCIPAL) y un Submenú, consola espera a que el usuario elija una de las opciones 
-        /// que aparecen para mostrar ese Menú y en caso de introducir un dato fuera de ese Submenú imprime un aviso al usuario de error.
+        /// Imprime el Menú Principal. Formada por la cabecera del Menú Principal junto 
+        /// con 5 opciones de las cuales puedes elegir una de ellas para ir a su menú. 
         /// </summary>
         public static void LunchMainMenu()
         {
-            Console.Clear();
-            UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
-            UserInterfaceMenu.PrintSubMainMenu();
+            Boolean bucle = true;
 
-            while (true)
+            while (bucle)
             {
+                Console.Clear();
+                UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                UserInterfaceMenu.PrintSubMainMenu();
                 int option = Controllers.ReadOption();
 
                 switch (option)
                 {
                     case 0:
-                        Environment.Exit(0);
+                        bucle = false;
                         break;
                     case 1:
                         Console.Clear();
