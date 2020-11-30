@@ -10,13 +10,12 @@ namespace Práctica1
         /// </summary>
         public static void LunchMainMenu()
         {
+            UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+            UserInterfaceMenu.PrintSubMainMenu();
             Boolean bucle = true;
 
             while (bucle)
             {
-                Console.Clear();
-                UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
-                UserInterfaceMenu.PrintSubMainMenu();
                 int option = Controllers.ReadOption();
 
                 switch (option)
@@ -27,22 +26,32 @@ namespace Práctica1
                     case 1:
                         Console.Clear();
                         Controllers.LaunchPower2Menu();
+                        UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                        UserInterfaceMenu.PrintSubMainMenu();
                         break;
                     case 2:
                         Console.Clear();
                         Controllers.LaunchSumatoriMenu();
+                        UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                        UserInterfaceMenu.PrintSubMainMenu();
                         break;
                     case 3:
                         Console.Clear();
                         Controllers.LaunchFactirialMenu();
+                        UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                        UserInterfaceMenu.PrintSubMainMenu();
                         break;
                     case 4:
                         Console.Clear();
                         Controllers.LaunchPrimeMenu();
+                        UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                        UserInterfaceMenu.PrintSubMainMenu();
                         break;
                     case 5:
                         Console.Clear();
                         Controllers.LaunchFibonacciMenu();
+                        UserInterfaceMenu.PrintHead("MENÚ PRINCIPAL", ConsoleColor.DarkCyan);
+                        UserInterfaceMenu.PrintSubMainMenu();
                         break;
                     default:
                         Console.WriteLine("No se ha seleccionado ninguna opción");

@@ -18,6 +18,7 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
+            Console.Clear();
         }
 
         /// <summary>
@@ -52,6 +53,7 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
+            Console.Clear();
         }
 
         /// <summary>
@@ -83,6 +85,7 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
+            Console.Clear();
         }
 
         /// <summary>
@@ -114,6 +117,7 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
+            Console.Clear();
         }
 
         /// <summary>
@@ -130,6 +134,7 @@ namespace Práctica1
             Console.WriteLine("");
             Console.WriteLine("Pulsa intro para volver al Menú Principal");
             Console.ReadLine();
+            Console.Clear();
         }
 
         /// <summary>
